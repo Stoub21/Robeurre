@@ -1,0 +1,65 @@
+# ROS build and development artifacts
+build/
+devel/
+install/
+logs/
+
+# ROS 2 (Colcon) build artifacts
+build/
+install/
+log/
+
+# Catkin workspace directories
+catkin_ws/build/
+catkin_ws/devel/
+catkin_ws/install/
+catkin_ws/logs/
+
+# CMake build artifacts
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# IDEs and editors specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+
+# ROS specific generated files
+.ros/
+
+# Ignore executable files
+*.out
+*.o
+
+# Other
+*.log
+*.tmp
+*.temp
+
+# Node_modules if using JavaScript
+node_modules/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db

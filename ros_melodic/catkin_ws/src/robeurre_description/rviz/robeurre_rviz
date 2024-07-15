@@ -1,0 +1,11 @@
+# Rviz configuration file
+Visualization Manager:
+  Class: ""
+  Displays:
+  - Class: rviz/RobotModel
+    Enabled: true
+    Name: Robot Model
+    Robot Description: robot_description
+  - Class: rviz/Grid
+    Enabled: true
+    Name: Grid

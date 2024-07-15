@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  ros-melodic:  
+    image: ros_master_ws:lastest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DISPLAY: $DISPLAY
+      XAUTHORITY: /home/ubuntu/.Xauthority
+    volumes:
+      - ./catkin_ws:/home/ubuntu/catkin_ws
+      - /dev/dri
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/home/ubuntu/.Xauthority:rw
+    container_name: ros_master_ws_docker
+    network_mode: "host"
+    devices:
+      - /dev:/dev
+    stdin_open: true
+    tty: true
+    privileged: true

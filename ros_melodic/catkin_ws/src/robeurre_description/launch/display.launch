@@ -1,0 +1,4 @@
+<launch>
+  <param name="robot_description" command="$(find xacro)/xacro '$(find robeurre_description)/urdf/robot.urdf'"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find robeurre_description)/rviz/robot.rviz"/>
+</launch>
